@@ -7,14 +7,8 @@ import $ from "jquery";
 class App extends React.Component {
   constructor(props) {
     super(props);
-
-    this.blankState();
-
-    this.performSearch();
-  }
-
-  blankState() {
     this.state = {};
+    this.performSearch();
   }
 
   performSearch(searchMovie) {
