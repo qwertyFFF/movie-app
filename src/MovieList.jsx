@@ -25,6 +25,7 @@ class MovieList extends React.Component {
                     width="120"
                     src={this.props.movie.poster_src}
                     alt="poster"
+                    className="Movie-logo"
                   />
                 </TableCell>
                 <TableCell align="left">
