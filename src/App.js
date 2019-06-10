@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./primary-green.svg";
+import logo from "./images/primary-green.svg";
 import "./App.css";
 import MovieList from "./MovieList";
 import $ from "jquery";
@@ -10,36 +10,6 @@ class App extends React.Component {
 
     this.blankState();
 
-    // const movies = [
-    //   {
-    //     id: 0,
-    //     poster_src: movieLogo,
-    //     title: "Olá Mundo 1!!!",
-    //     overview: "É isso ai..."
-    //   },
-    //   {
-    //     id: 1,
-    //     poster_src: movieLogo,
-    //     title: "Olá Mundo 2!!!",
-    //     overview: "É isso ai 2..."
-    //   }
-    // ];
-
-    // this.state = {
-    //   rows: <p>This my row!</p>
-    // };
-
-    // var movieRows = [];
-
-    // movies.forEach(movie => {
-    //   const movieRow = <MovieList movie={movie} />;
-
-    //   movieRows.push(movieRow);
-    // });
-
-    // this.state = {
-    //   rows: movieRows
-    // };
     this.performSearch();
   }
 
@@ -95,16 +65,14 @@ class App extends React.Component {
               <td>
                 <h2>The MoviesDB App</h2>
               </td>
-              <td>
-                <input
-                  className="App-input"
-                  placeholder="Search movies.."
-                  onChange={this.searchChangeHandler.bind(this)}
-                />
-              </td>
             </tr>
           </tbody>
         </table>
+        <input
+          className="App-input"
+          placeholder="Search movies.."
+          onChange={this.searchChangeHandler.bind(this)}
+        />
 
         {this.state.rows}
       </div>
